@@ -73,9 +73,9 @@ for name, model in models:
 	names.append(name)
 	print('%s: %f (%f)' % (name, cv_results.mean(), cv_results.std()))
 
-# pyplot.boxplot(results, labels=names)
-# pyplot.title('Algorithm Comparison')
-# pyplot.show()
+pyplot.boxplot(results, labels=names)
+pyplot.title('Algorithm Comparison')
+pyplot.show()
 
 #Predictions
 model = SVC(gamma='auto')
